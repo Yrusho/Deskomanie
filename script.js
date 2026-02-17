@@ -123,7 +123,7 @@ document.getElementById("vybusna-kotatka-kosik").addEventListener("click", funct
 
 //###########################################################xx
 
-document.getElementById("ubongo-kosi").addEventListener("click", function () {
+document.getElementById("ubongo-kosik").addEventListener("click", function () {
     const produkt = this.closest(".produkt");
     produkt.style.transition = "opacity 0.3s ease";
     produkt.style.opacity = "0";
