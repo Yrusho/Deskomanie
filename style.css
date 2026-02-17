@@ -1,9 +1,102 @@
+main{
+    margin-top: 200px;
+}
+/* to main pak předělat, ještě se uvidí */
+.lupa{
+    width: 12px;
+    height: auto;
+}
+.div-hledani{
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+}
+#hledat{
+    height: 45px;
+    width: 500px;
+}
+#tlacitko-lupa{
+    height: 50px;
+    width: 60px;
+}
+.titul-stránky{
+    font-size: 120px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2b0982;
+    text-shadow: 
+    0 0 5px rgb(66, 2, 86),
+    0 0 10px whitesmoke,
+    0 0 25px whitesmoke,
+    0 0 30px black;
+    text-align: center;
+}
+.titul-div{
+    background-color: #e615df;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .obrazek{
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    border-radius: 40px;
+}
+.polozky{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    display: flex;
+}
+.produkt{
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 410px;
+    height: 635px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    box-shadow: 
+    0 0 5px rgb(66, 2, 86),
+    0 0 10px whitesmoke,
+    0 0 25px whitesmoke,
+    0 0 30px black;
 
 }
-.cena{
-
+.produkt:hover{
+    transform: scale(1.1);
+    transition: all 3s;
+    box-shadow: 
+    0 0 15px rgb(66, 2, 86),
+    0 0 25px rgb(187, 0, 255),
+    0 0 40px rgb(255, 0, 200),
+    0 0 44px black;
 }
 .popis{
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.produkt h3{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zarovnani-obrazku{
+    display: flex;
+    justify-content: center;
+}
+.tlacitko-do-kosiku{
+    width: 350px;
+    height: 35px;
+    font-size: 20px;
+}
+#error{
+    color: red;
+    font-size: 20px;
+    text-align: center;
 
 }

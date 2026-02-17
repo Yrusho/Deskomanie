@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eshop deskové hry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/kostky.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="titul-div">
+            <h1 class="titul-stránky">Deskománie</h1>
+            <!-- potřebujeme PNGčko s průhlednym pozadim -->
+        </div>
+
+        <div class="div-hledani">
+            <input type="text" id="hledat" placeholder="Hledat Produkty...">
+            <button id="tlacitko-lupa" onclick="hledat()"><img class="lupa" src="img/lupa.png" alt="lupa"></button>
+        </div>
+            <h5 id="error"></h5>
+    </header>
+    <main>
+
+        <div class="polozky">
+
+            <div class="produkt">
+                <h3 id="list">Activity</h3>
+                <div class="zarovnani-obrazku"><img id="activity-img" class="obrazek" src="img/activity_3.jpg"
+                        alt="activity3"></div>
+                <p class="popis">Activity je legendární hra, u které se směje úplně každý. Spojuje kreslení, pantomimu a
+                    slovní popis do jedné zběsilé týmové zábavy, kde rozhoduje rychlost, kreativita.</p>
+                <button id="activity-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Dostihy a sázky</h3>
+                <div class="zarovnani-obrazku"><img id="dostihy-a-sazky-img" class="obrazek"
+                        src="img/dostihyasazky.webp" alt="Dostihy a sázky"></div>
+                <p class="popis">Legendární česká hra. Nakupujte koně, investujte do dostihů a snažte se nezbankrotovat
+                    v této klasické simulaci trhu.</p>
+                <button id="dostihy-a-sazky-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Scrabble</h3>
+                <div class="zarovnani-obrazku"><img id="scrabble-img" class="obrazek" src="img/scrabble.jpg"
+                        alt="Scrabble"></div>
+                <p class="popis">Skládejte slova, využívejte prémiová pole a prokažte svou slovní zásobu v nejznámější
+                    deskové hře s písmenky na světě.</p>
+                <button id="scrabble-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Monopoly</h3>
+                <div class="zarovnani-obrazku"><img id="monopoly-img" class="obrazek" src="img/monopoly.jpg"
+                        alt="Monopoly"></div>
+                <p class="popis">Obchodujte s nemovitostmi, stavte domy a hotely. Cílem je ovládnout trh a poslat
+                    ostatní spoluhráče do úpadku.</p>
+                <button id="monopoly-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Hra Dixit</h3>
+                <div class="zarovnani-obrazku"><img id="dixit-img" class="obrazek" src="img/dixit-4.jpg" alt="Dixit">
+                </div>
+                <p class="popis">Vypravěčská hra s nádhernými ilustracemi. Zapojte fantazii, popisujte karty pomocí
+                    asociací a hádejte tu správnou kartu ostatních.</p>
+                <button id="dixit-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Carcassonne</h3>
+                <div class="zarovnani-obrazku"><img id="carcassonne-img" class="obrazek" src="img/Carcassonne.jpg"
+                        alt="Carcassonne"></div>
+                <p class="popis">Budujte krajinu plnou měst, klášterů a cest. Strategicky umísťujte své figurky a
+                    ovládejte území v této oblíbené klasice.</p>
+                <button id="carcassonne-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Střílečka Bang!</h3>
+                <div class="zarovnani-obrazku"><img id="bang-img" class="obrazek" src="" alt="Bang!"></div>
+                <p class="popis">Divoký západ v karetní podobě. Šerif, pomocníci, bandité a odpadlík proti sobě v
+                    přestřelce plné blafování.</p>
+                <button id="bang-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Krycí jména</h3>
+                <div class="zarovnani-obrazku"><img id="kryci-jmena-img" class="obrazek" src="" alt="Krycí jména"></div>
+                <p class="popis">Hledejte agenty podle nápověd svého velitele. Skvělá týmová hra se slovy, která
+                    procvičí vaše logické myšlení.</p>
+                <button id="kryci-jmena-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Karak</h3>
+                <div class="zarovnani-obrazku"><img id="karak-img" class="obrazek" src="" alt="Karak"></div>
+                <p class="popis">České fantasy dobrodružství. Procházejte labyrint, bojujte s příšerami, sbírejte
+                    poklady a vylepšujte schopnosti svého hrdiny.</p>
+                <button id="karak-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Výbušné kočky</h3>
+                <div class="zarovnani-obrazku"><img id="vybusna-kotatka-img" class="obrazek" src=""
+                        alt="Výbušná koťátka"></div>
+                <p class="popis">Extrémně strategická verze ruské rulety s koťaty. Hrajte karty, vyhýbejte se explozím a
+                    škodiťte svým soupeřům.</p>
+                <button id="vybusna-kotatka-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Ubongo</h3>
+                <div class="zarovnani-obrazku"><img id="ubongo-img" class="obrazek" src="" alt="Ubongo"></div>
+                <p class="popis">Rychlá logická hra pro celou rodinu. Skládejte geometrické tvary na čas a sbírejte
+                    drahokamy dříve než ostatní.</p>
+                <button id="ubongo-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Ticket to Ride</h3>
+                <div class="zarovnani-obrazku"><img id="ticket-to-ride-img" class="obrazek" src="" alt="Ticket to Ride">
+                </div>
+                <p class="popis">Vlakové dobrodružství napříč Evropou. Sbírejte karty vagónů, obsazujte tratě a
+                    propojujte cílová města pro zisk bodů.</p>
+                <button id="ticket-to-ride-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">7 divů světa</h3>
+                <div class="zarovnani-obrazku"><img id="7-divu-sveta-img" class="obrazek" src="" alt="7 divů světa">
+                </div>
+                <p class="popis">Staňte se vůdcem jednoho z antických měst. Těžte suroviny, rozvíjejte obchod, budujte
+                    armádu a postavte architektonický div.</p>
+                <button id="7-divu-sveta-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Tickets please!</h3>
+                <div class="zarovnani-obrazku"><img id="jizdenky-prosim-img" class="obrazek" src=""
+                        alt="Jízdenky, prosím!"></div>
+                <p class="popis">Jednoduchá hra o budování železnic. Plánujte trasy, dojeďte do cíle jako první.</p>
+                <button id="jizdenky-prosim-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+
+            <div class="produkt">
+                <h3 id="list">Duch!</h3>
+                <div class="zarovnani-obrazku"><img id="duch-img" class="obrazek" src="" alt="Duch!"></div>
+                <p class="popis">Blesková postřehová hra. Musíte bleskově sebrat správný předmět podle barvy a tvaru na
+                    kartě. Procvičí vaše reflexy.</p>
+                <button id="duch-kosik" class="tlacitko-do-kosiku">Do košíku</button>
+            </div>
+        </div> <!-- Konec divu položek, další hry dávat jenom nad tohle!!! -->
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
