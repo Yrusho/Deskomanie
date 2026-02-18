@@ -12,234 +12,98 @@ async function hledat() {
     document.getElementById("error").innerText = "";
 }
 
+//kosik
 
-//mizení
+/*
+function kosik() {
+    if(document.getElementById("polozky-kosiku").style.opacity == "0"){
+        document.getElementById("polozky-kosiku").style.opacity = "100"
+    }
+    else{
+        document.getElementById("polozky-kosiku").style.opacity = "0"
+    }
+}
+*/
 
-document.getElementById("activity-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("dostihy-a-sazky-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("scrabble-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("monopoly-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("dixit-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("carcassonne-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("bang-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("kryci-jmena-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("karak-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("vybusna-kotatka-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("ubongo-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("ticket-to-ride-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("7-divu-sveta-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("jizdenky-prosim-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
-
-//###########################################################xx
-
-document.getElementById("duch-kosik").addEventListener("click", function () {
-    const produkt = this.closest(".produkt");
-    produkt.style.transition = "opacity 0.3s ease";
-    produkt.style.opacity = "0";
-    setTimeout(() => {
-        produkt.style.display = "none";
-    }, 300);
-});
+//funkce na odebrání z obchodu a přídání do košíku
 
 function activity() {
     document.getElementById("activity-karta").style.display = "block";
+    document.getElementById("activityobchod").style.display = "none";
 }
 
 function dostihyasazky() {
     document.getElementById("dostihyasazky-karta").style.display = "block";
+    document.getElementById("dostihyasazkyobchod").style.display = "none";
 }
 
 function scrabble() {
     document.getElementById("scrabble-karta").style.display = "block";
+    document.getElementById("scrabbleobchod").style.display = "none";
 }
 
 function monopoly() {
     document.getElementById("monopoly-karta").style.display = "block";
+    document.getElementById("monopolyobchod").style.display = "none";
 }
 
 function dixit() {
     document.getElementById("dixit-karta").style.display = "block";
+    document.getElementById("dixitobchod").style.display = "none";
 }
 
 function carcassonne() {
     document.getElementById("carcassonne-karta").style.display = "block";
+    document.getElementById("carcassonneobchod").style.display = "none";
 }
 
 function bang() {
     document.getElementById("bang-karta").style.display = "block";
+    document.getElementById("bangobchod").style.display = "none";
 }
 
 function krycijmena() {
     document.getElementById("krycijmena-karta").style.display = "block";
+    document.getElementById("krycijmenaobchod").style.display = "none";
 }
 
 function karak() {
     document.getElementById("karak-karta").style.display = "block";
+    document.getElementById("karakobchod").style.display = "none";
 }
 
 function vybusnekocky() {
     document.getElementById("vybusnekocky-karta").style.display = "block";
+    document.getElementById("vybusnekockyobchod").style.display = "none";
 }
 
 function ubongo() {
     document.getElementById("ubongo-karta").style.display = "block";
+    document.getElementById("ubongoobchod").style.display = "none";
 }
 
 function tickettoride() {
     document.getElementById("tickettoride-karta").style.display = "block";
+    document.getElementById("tickettorideobchod").style.display = "none";
 }
 
 function sedmdivusveta() {
     document.getElementById("divu-sveta-karta").style.display = "block";
+    document.getElementById("sedmdivusvetaobchod").style.display = "none";
 }
 
 function jizdenkyprosim() {
     document.getElementById("jizdenky-prosim-karta").style.display = "block";
+    document.getElementById("jizdenkyprosimobchod").style.display = "none";
 }
 
 function duch() {
     document.getElementById("duch-karta").style.display = "block";
+    document.getElementById("duchobchod").style.display = "none";
 }
 
-//odebrání z košíku
-//nejde nefunguje kunda
+//funkce na odebrání z košíku a dání zpět do obchodu
+
 function activitykosik() {
     document.getElementById("activity-karta").style.display = "none";
 }
@@ -247,55 +111,55 @@ function activitykosik() {
 function dostihyasazkykosik() {
     document.getElementById("dostihyasazky-karta").style.display = "none";
 }
-/*
-function activitykosik() {
+
+function scrabblekosik() {
     document.getElementById("scrabble-karta").style.display = "none";
 }
 
-function activitykosik() {
+function monopolykosik() {
     document.getElementById("monopoly-karta").style.display = "none";
 }
 
-function activitykosik() {
+function dixitkosik() {
     document.getElementById("dixit-karta").style.display = "none";
 }
 
-function activitykosik() {
+function carcassonnekosik() {
     document.getElementById("carcassonne-karta").style.display = "none";
 }
 
-function activitykosik() {
+function bangkosik() {
     document.getElementById("bang-karta").style.display = "none";
 }
 
-function activitykosik() {
+function krycijmenakosik() {
     document.getElementById("krycijmena-karta").style.display = "none";
 }
 
-function activitykosik() {
+function karakkosik() {
     document.getElementById("karak-karta").style.display = "none";
 }
 
-function activitykosik() {
+function vybusnekockykosik() {
     document.getElementById("vybusnekocky-karta").style.display = "none";
 }
 
-function activitykosik() {
+function ubongokosik() {
     document.getElementById("ubongo-karta").style.display = "none";
 }
 
-function activitykosik() {
+function tickettoridekosik() {
     document.getElementById("tickettoride-karta").style.display = "none";
 }
 
-function activitykosik() {
+function sedmdivusvetakosik() {
     document.getElementById("divu-sveta-karta").style.display = "none";
 }
 
-function activitykosik() {
+function jizdenkyprosimkosik() {
     document.getElementById("jizdenky-prosim-karta").style.display = "none";
 }
 
-function activitykosik() {
+function duchkosik() {
     document.getElementById("duch-karta").style.display = "none";
-}*/
+}
