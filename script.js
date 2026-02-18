@@ -14,14 +14,13 @@ async function hledat() {
 
 //kosik
 
-
 function kosik() {
-    if (document.getElementById("kosik").div.style.display = "none"){
-        document.getElementById("kosik").div.style.display = "block"
+    if (document.getElementById("kosik").style.display = "none"){
+        document.getElementById("kosik").style.display = "block"
     }   
     
     else 
-        document.getElementById("kosik").div.style.display = "none"
+        document.getElementById("kosik").style.display = "none"
     }
 
 

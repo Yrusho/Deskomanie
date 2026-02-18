@@ -1,3 +1,4 @@
+/*
 #activity-karta,
 #dostihy-a-sazky-karta,
 #activity-karta,
@@ -15,5 +16,11 @@
 #divu-sveta-karta,
 #jizdenky-prosim-karta,
 #duch-karta {
-    display: none;
+    opacity: 1;
+}
+*/
+
+#polozky-kosiku
+{
+    opacity: 0;
 }
