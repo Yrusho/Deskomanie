@@ -214,7 +214,7 @@ function kosik() {
     document.getElementById("jizdenky-prosim-karta").style.display = "none";
     document.getElementById("duch-karta").style.display = "none";
     
-    document.getElementById("zaplaceno").innerText = "Děkujeme za platbu, nachytal jste se podvodnému eshopu. Děkujeme za vaše peníze!";
+    document.getElementById("zaplaceno").innerText = "Děkujeme za platbu. Vaše objednávka bude brzy odeslána.";
     await new Promise(resolve => setTimeout(resolve, 5000));
      document.getElementById("zaplaceno").innerText = ""
 }
