@@ -16,11 +16,16 @@
 #divu-sveta-karta,
 #jizdenky-prosim-karta,
 #duch-karta {
-    opacity: 1;
+    opacity: 0;
 }
 */
 
-#polozky-kosiku
-{
-    opacity: 0;
+#polozky-kosiku{
+    opacity: 1;
 }
+
+/*
+
+v kosi se to predtim spawnovalo v kosi ale pak to fungovalo normalne
+
+*/
