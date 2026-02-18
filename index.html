@@ -31,12 +31,12 @@
 
             <div id="activity-karta">
                 <div class="produkt-v-kosiku">
-                    <h3 id="list">Activity</h3>
-                    <div class="zarovnani-obrazku"><img id="activity-img" class="obrazek" src="img/activity_3.jpg"
+                    <h3 id="list" >Activity</h3>
+                    <div id="activity-kos" class="zarovnani-obrazku"><img id="activity-img" class="obrazek" src="img/activity_3.jpg"
                             alt="activity3"></div>
-                    <p class="popis">Activity je legendární hra, u které se směje úplně každý. Spojuje kreslení,
+                    <p id="activity-popis" class="popis">Activity je legendární hra, u které se směje úplně každý. Spojuje kreslení,
                         pantomimu a slovní popis do jedné zběsilé týmové zábavy, kde rozhoduje rychlost, kreativita.</p>
-                    <button id="activity-v-kosiku" class="tlacitko-do-kosiku">Odebrat</button>
+                    <button onclick="activitykosik()" class="tlacitko-do-kosiku">Odebrat</button>
                 </div>
             </div>
 
@@ -200,11 +200,11 @@
 
         <div class="polozky">
             <div class="polozky">
-                <div class="produkt">
-                    <h3 id="list">Activity</h3>
-                    <div class="zarovnani-obrazku"><img id="activity-img" class="obrazek" src="img/activity_3.jpg"
+                <div id="activity" class="produkt">
+                    <h3 id="list activity">Activity</h3>
+                    <div class="zarovnani-obrazku"><img id="activity-img activityimg" class="obrazek" src="img/activity_3.jpg"
                             alt="activity3"></div>
-                    <p class="popis">Activity je legendární hra...</p>
+                    <p id="activityp" class="popis">Activity je legendární hra...</p>
                     <button onclick="activity()" id="activity-kosik" class="tlacitko-do-kosiku">Do košíku</button>
                 </div>
 
@@ -213,7 +213,7 @@
                     <div class="zarovnani-obrazku"><img id="dostihy-a-sazky-img" class="obrazek"
                             src="img/dostihyasazky.webp" alt="Dostihy a sázky"></div>
                     <p class="popis">Legendární česká hra...</p>
-                    <button onclick="dostihyasazky()" id="dostihy-a-sazky-kosik" class="tlacitko-do-kosiku">Do
+                    <button onclick="dostihyasazky()" id="dostihyasazkykosik" class="tlacitko-do-kosiku">Do
                         košíku</button>
                 </div>
 
