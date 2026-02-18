@@ -1,102 +1,227 @@
-main{
-    margin-top: 200px;
+/* Na všechny barvy byla použita stránka bairesdev.com (AI barvy) proto jsou některé zapsány hex */
+* {
+    background-color: #0D1F2D;
 }
-/* to main pak předělat, ještě se uvidí */
-.lupa{
-    width: 12px;
-    height: auto;
+
+.titul-stránky {
+    font-size: 130px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 750;
+    color: #ffff;
+    text-shadow:
+        -5px 7px 7px #FF3D3D,
+        0 0 10px #FF3D3D,
+        0 0 15px #FF3D3D,
+        0 0 21px #ffe0c8,
+        0 0 42px #ffe0c8;
 }
-.div-hledani{
-    justify-content: center;
-    display: flex;
-    padding-top: 30px;
-}
-#hledat{
-    height: 45px;
-    width: 500px;
-}
-#tlacitko-lupa{
-    height: 50px;
-    width: 60px;
-}
-.titul-stránky{
-    font-size: 120px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #2b0982;
-    text-shadow: 
-    0 0 5px rgb(66, 2, 86),
-    0 0 10px whitesmoke,
-    0 0 25px whitesmoke,
-    0 0 30px black;
-    text-align: center;
-}
-.titul-div{
-    background-color: #e615df;
+
+.titul-div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.obrazek{
-    width: 250px;
-    height: 250px;
-    border: 5px solid black;
-    border-radius: 40px;
+
+main {
+    margin-top: 30px;
 }
-.polozky{
+
+.div-hledani {
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 0px;
+}
+
+#hledat {
+    height: 70px;
+    width: 750px;
+    background-color: #afffff;
+    font-size: 30px;
+
+}
+
+#hledat:hover {
+    transform: scale(1.08)
+}
+
+#hledat::placeholder {
+    font-size: 30px;
+}
+
+#tlacitko-lupa {
+    background-color: #afffff;
+    height: 77px;
+    width: 100px;
+}
+
+#tlacitko-lupa:hover {
+    transform: scale(1.1)
+}
+
+.lupa {
+    width: 30px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#error {
+    color: #ffe0c8;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 750;
+    text-shadow:
+        0 0 4px #FF3D3D,
+        0 0 10px #FF3D3D,
+        0 0 21px #ffe0c8;
+
+}
+
+.div-kosik {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.kosik {
+    width: 530px;
+    height: 130px;
+    font-size: 70px;
+    background-color: #afffff;
+    color: #4a9d9c;
+    border-radius: 50px;
+    box-shadow:
+        0 0 4px #afffff,
+        0 0 10px #afffff;
+}
+
+.kosik:hover {
+    transform: scale(1.5);
+    box-shadow:
+        0 0 4px #afffff,
+        0 0 10px #afffff,
+        -9px 13px 18px #FF3D3D,
+        9px 13px 18px #FF3D3D,
+        -9px 0 28px #ffe0c8;
+    transition: transform 2s, box-shadow 3s;
+}
+
+
+.polozky {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     display: flex;
+    padding-top: 50px;
 }
-.produkt{
-    border: 5px solid black;
+
+.produkt {
+    background-color: #354656;
+    border: 5px solid #4a9d9c;
     border-radius: 10px;
     width: 410px;
     height: 635px;
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
-    box-shadow: 
-    0 0 5px rgb(66, 2, 86),
-    0 0 10px whitesmoke,
-    0 0 25px whitesmoke,
-    0 0 30px black;
 
 }
-.produkt:hover{
+
+.produkt:hover {
     transform: scale(1.1);
-    transition: all 3s;
-    box-shadow: 
-    0 0 15px rgb(66, 2, 86),
-    0 0 25px rgb(187, 0, 255),
-    0 0 40px rgb(255, 0, 200),
-    0 0 44px black;
+    transition: transform 3s;
 }
-.popis{
-    font-size: 22px;
-    color: black;
+
+.produkt h3 {
+    background-color: rgba(0, 0, 0, 0);
     text-align: center;
-    padding-right: 15px;
-    padding-left: 15px;
+    font-size: 48px;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 750;
+    text-shadow:
+        0 0 4px #FF3D3D,
+        0 0 14px #ffe0c8;
 }
-.produkt h3{
-    text-align: center;
-    font-size: 50px;
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.zarovnani-obrazku{
+
+.zarovnani-obrazku {
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: center;
 }
-.tlacitko-do-kosiku{
+
+.obrazek {
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    border-radius: 40px;
+}
+
+.popis {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-shadow: 0 0 8px #ffe0c8;
+}
+
+.tlacitko-do-kosiku {
     width: 350px;
     height: 35px;
     font-size: 20px;
+    background-color: #afffff;
+    color: #0D1F2D;
+    border-radius: 50px;
 }
-#error{
-    color: red;
-    font-size: 20px;
-    text-align: center;
 
+.podpis {
+    padding-top: 5px;
+    color: #ffe0c8;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-shadow:
+        0 0 4px #FF3D3D,
+        0 0 15px #ffe0c8;
+}
+
+.polozky-kosiku {
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    display: flex;
+}
+
+.produkt-v-kosiku {
+    background-color: #354656;
+    border: 5px solid #4a9d9c;
+    border-radius: 10px;
+    width: 410px;
+    height: 635px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.produkt-v-kosiku h3 {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    font-size: 48px;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 750;
+    text-shadow:
+        0 0 4px #FF3D3D,
+        0 0 14px #ffe0c8;
+}
+
+.oddeleni-kosiku {
+    border-bottom: solid 2px #e0e0e0;
 }

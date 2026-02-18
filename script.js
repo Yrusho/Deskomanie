@@ -1,7 +1,7 @@
 //vyhledávání
-async function hledat(){
+async function hledat() {
     document.getElementById("error").innerText = "něco se pokazilo, vyzkoušejte to prosím znovu";
-    await new Promise(resolve => setTimeout(resolve, 5000)); 
+    await new Promise(resolve => setTimeout(resolve, 5000));
     /* 
     async řekne že funkce nebude hotová hned po spuštění
     await řekne tady se zastav a počkej
@@ -11,6 +11,8 @@ async function hledat(){
     */
     document.getElementById("error").innerText = "";
 }
+
+
 //mizení
 
 document.getElementById("activity-kosik").addEventListener("click", function () {
