@@ -14,16 +14,17 @@ async function hledat() {
 
 //kosik
 
-/*
+
 function kosik() {
-    if(document.getElementById("polozky-kosiku").style.opacity == "0"){
-        document.getElementById("polozky-kosiku").style.opacity = "100"
+    if (document.getElementById("kosik").div.style.display = "none"){
+        document.getElementById("kosik").div.style.display = "block"
+    }   
+    
+    else 
+        document.getElementById("kosik").div.style.display = "none"
     }
-    else{
-        document.getElementById("polozky-kosiku").style.opacity = "0"
-    }
-}
-*/
+
+
 
 //funkce na odebrání z obchodu a přídání do košíku
 
@@ -106,60 +107,75 @@ function duch() {
 
 function activitykosik() {
     document.getElementById("activity-karta").style.display = "none";
+    document.getElementById("activityobchod").style.display = "block";
 }
 
 function dostihyasazkykosik() {
     document.getElementById("dostihyasazky-karta").style.display = "none";
+    document.getElementById("dostihyasazkyobchod").style.display = "block";
 }
 
 function scrabblekosik() {
     document.getElementById("scrabble-karta").style.display = "none";
+    document.getElementById("scrabbleobchod").style.display = "block";
 }
 
 function monopolykosik() {
     document.getElementById("monopoly-karta").style.display = "none";
+    document.getElementById("monopolyobchod").style.display = "block";
 }
 
 function dixitkosik() {
     document.getElementById("dixit-karta").style.display = "none";
+    document.getElementById("dixitobchod").style.display = "block";
 }
 
 function carcassonnekosik() {
     document.getElementById("carcassonne-karta").style.display = "none";
+    document.getElementById("carcassonneobchod").style.display = "block";
 }
 
 function bangkosik() {
     document.getElementById("bang-karta").style.display = "none";
+    document.getElementById("bangobchod").style.display = "block";
 }
 
 function krycijmenakosik() {
     document.getElementById("krycijmena-karta").style.display = "none";
+    document.getElementById("krycijmenaobchod").style.display = "block";
 }
 
 function karakkosik() {
     document.getElementById("karak-karta").style.display = "none";
+    document.getElementById("karakobchod").style.display = "block";
 }
 
 function vybusnekockykosik() {
     document.getElementById("vybusnekocky-karta").style.display = "none";
+    document.getElementById("vybusnekockyobchod").style.display = "block";
 }
 
 function ubongokosik() {
     document.getElementById("ubongo-karta").style.display = "none";
+    document.getElementById("ubongoobchod").style.display = "block";
 }
 
 function tickettoridekosik() {
     document.getElementById("tickettoride-karta").style.display = "none";
+    document.getElementById("tickettorideobchod").style.display = "block";
 }
 
 function sedmdivusvetakosik() {
     document.getElementById("divu-sveta-karta").style.display = "none";
+    document.getElementById("sedmdivusvetaobchod").style.display = "block";
 }
 
 function jizdenkyprosimkosik() {
     document.getElementById("jizdenky-prosim-karta").style.display = "none";
+    document.getElementById("jizdenkyprosimobchod").style.display = "block";
 }
 
 function duchkosik() {
     document.getElementById("duch-karta").style.display = "none";
+    document.getElementById("duchobchod").style.display = "block";
 }
