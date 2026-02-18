@@ -1,4 +1,3 @@
-/*
 #activity-karta,
 #dostihy-a-sazky-karta,
 #activity-karta,
@@ -16,16 +15,16 @@
 #divu-sveta-karta,
 #jizdenky-prosim-karta,
 #duch-karta {
-    opacity: 0;
-}
-*/
-
-#polozky-kosiku{
-    opacity: 1;
+    display: none;
 }
 
-/*
+.schovanykosik {
+    display: none;
+}
 
-v kosi se to predtim spawnovalo v kosi ale pak to fungovalo normalne
-
-*/
+#zaplatit {
+    /* hello */
+}
+.odskok{
+    margin-bottom:60px;
+}

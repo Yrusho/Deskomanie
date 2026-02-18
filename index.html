@@ -24,7 +24,7 @@
         <h5 id="error"></h5>
         <!-- ###################################### -->
         <div class="div-kosik">
-            <button id="kosik" class="kosik" onclick="kosik()">košík</button>
+            <button id="kosik" class="kosik" onclick="kosik()">Schovat košík</button>
         </div>
 
         <div class="polozky-kosiku">
@@ -200,8 +200,13 @@
                     <button onclick="duchkosik()" id="duch-v-kosiku" class="tlacitko-do-kosiku">Odebrat</button>
                 </div>
             </div>
-
         </div> <!-- konec divu položky - košík-->
+
+        <div class="titul-div odskok"> <!-- tlačítko zaplatit-->
+            <button onclick="zaplatit()" id="zaplatit" class="zaplatit">Zaplatit</button>
+            <h5 id="zaplaceno"></h5>
+        </div>
+
         <div class="oddeleni-kosiku"></div>
 
         <!-- ###################################### -->

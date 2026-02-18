@@ -64,9 +64,10 @@ main {
     width: 30px;
     height: auto;
     background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
-#error {
+#error, #zaplaceno {
     color: #ffe0c8;
     text-align: center;
     font-size: 50px;
@@ -96,9 +97,34 @@ main {
     box-shadow:
         0 0 4px #afffff,
         0 0 10px #afffff;
+    cursor: pointer;
 }
 
 .kosik:hover {
+    transform: scale(1.5);
+    box-shadow:
+        0 0 4px #afffff,
+        0 0 10px #afffff,
+        -9px 13px 18px #FF3D3D,
+        9px 13px 18px #FF3D3D,
+        -9px 0 28px #ffe0c8;
+    transition: transform 2s, box-shadow 3s;
+}
+
+.zaplatit {
+    width: 300px;
+    height: 85px;
+    font-size: 55px;
+    background-color: #afffff;
+    color: #4a9d9c;
+    border-radius: 50px;
+    box-shadow:
+        0 0 4px #afffff,
+        0 0 10px #afffff;
+    cursor: pointer;
+}
+
+.zaplatit:hover {
     transform: scale(1.5);
     box-shadow:
         0 0 4px #afffff,
@@ -127,7 +153,6 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
-
 }
 
 .produkt:hover {
@@ -177,6 +202,7 @@ main {
     background-color: #afffff;
     color: #0D1F2D;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .podpis {

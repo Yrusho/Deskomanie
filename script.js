@@ -15,13 +15,13 @@ async function hledat() {
 //kosik
 
 function kosik() {
-    if (document.getElementById("kosik").style.display = "none"){
+    if (document.getElementById("kosik").style.display = "none") {
         document.getElementById("kosik").style.display = "block"
-    }   
-    
-    else 
-        document.getElementById("kosik").style.display = "none"
     }
+
+    else
+        document.getElementById("kosik").style.display = "none"
+}
 
 
 
@@ -106,75 +106,115 @@ function duch() {
 
 function activitykosik() {
     document.getElementById("activity-karta").style.display = "none";
-    document.getElementById("activityobchod").style.display = "block";
+    document.getElementById("activityobchod").style.display = "";
 }
 
 function dostihyasazkykosik() {
     document.getElementById("dostihyasazky-karta").style.display = "none";
-    document.getElementById("dostihyasazkyobchod").style.display = "block";
+    document.getElementById("dostihyasazkyobchod").style.display = "";
 }
 
 function scrabblekosik() {
     document.getElementById("scrabble-karta").style.display = "none";
-    document.getElementById("scrabbleobchod").style.display = "block";
+    document.getElementById("scrabbleobchod").style.display = "";
 }
 
 function monopolykosik() {
     document.getElementById("monopoly-karta").style.display = "none";
-    document.getElementById("monopolyobchod").style.display = "block";
+    document.getElementById("monopolyobchod").style.display = "";
 }
 
 function dixitkosik() {
     document.getElementById("dixit-karta").style.display = "none";
-    document.getElementById("dixitobchod").style.display = "block";
+    document.getElementById("dixitobchod").style.display = "";
 }
 
 function carcassonnekosik() {
     document.getElementById("carcassonne-karta").style.display = "none";
-    document.getElementById("carcassonneobchod").style.display = "block";
+    document.getElementById("carcassonneobchod").style.display = "";
 }
 
 function bangkosik() {
     document.getElementById("bang-karta").style.display = "none";
-    document.getElementById("bangobchod").style.display = "block";
+    document.getElementById("bangobchod").style.display = "";
 }
 
 function krycijmenakosik() {
     document.getElementById("krycijmena-karta").style.display = "none";
-    document.getElementById("krycijmenaobchod").style.display = "block";
+    document.getElementById("krycijmenaobchod").style.display = "";
 }
 
 function karakkosik() {
     document.getElementById("karak-karta").style.display = "none";
-    document.getElementById("karakobchod").style.display = "block";
+    document.getElementById("karakobchod").style.display = "";
 }
 
 function vybusnekockykosik() {
     document.getElementById("vybusnekocky-karta").style.display = "none";
-    document.getElementById("vybusnekockyobchod").style.display = "block";
+    document.getElementById("vybusnekockyobchod").style.display = "";
 }
 
 function ubongokosik() {
     document.getElementById("ubongo-karta").style.display = "none";
-    document.getElementById("ubongoobchod").style.display = "block";
+    document.getElementById("ubongoobchod").style.display = "";
 }
 
 function tickettoridekosik() {
     document.getElementById("tickettoride-karta").style.display = "none";
-    document.getElementById("tickettorideobchod").style.display = "block";
+    document.getElementById("tickettorideobchod").style.display = "";
 }
 
 function sedmdivusvetakosik() {
     document.getElementById("divu-sveta-karta").style.display = "none";
-    document.getElementById("sedmdivusvetaobchod").style.display = "block";
+    document.getElementById("sedmdivusvetaobchod").style.display = "";
 }
 
 function jizdenkyprosimkosik() {
     document.getElementById("jizdenky-prosim-karta").style.display = "none";
-    document.getElementById("jizdenkyprosimobchod").style.display = "block";
+    document.getElementById("jizdenkyprosimobchod").style.display = "";
 }
 
 function duchkosik() {
     document.getElementById("duch-karta").style.display = "none";
-    document.getElementById("duchobchod").style.display = "block";
+    document.getElementById("duchobchod").style.display = "";
+}
+
+//schovat kosik
+function kosik() {
+    if (document.getElementById("kosik").innerText === "Schovat košík") {
+        document.getElementById("kosik").innerText = "Zobrazit košík"
+    }
+    else if (document.getElementById("kosik").innerText === "Zobrazit košík") {
+        document.getElementById("kosik").innerText = "Schovat košík"
+    }
+    else {
+        document.getElementById("kosik").innerText = "Nastal problém"
+    }
+    const deskovky = document.querySelectorAll(".produkt-v-kosiku, .zaplatit");
+    deskovky.forEach(function (deskovka) {
+        deskovka.classList.toggle("schovanykosik");
+    });
+}
+
+//zaplatit
+ async function zaplatit() {
+    document.getElementById("activity-karta").style.display = "none";
+    document.getElementById("dostihyasazky-karta").style.display = "none";
+    document.getElementById("scrabble-karta").style.display = "none";
+    document.getElementById("monopoly-karta").style.display = "none";
+    document.getElementById("dixit-karta").style.display = "none";
+    document.getElementById("carcassonne-karta").style.display = "none";
+    document.getElementById("bang-karta").style.display = "none";
+    document.getElementById("krycijmena-karta").style.display = "none";
+    document.getElementById("karak-karta").style.display = "none";
+    document.getElementById("vybusnekocky-karta").style.display = "none";
+    document.getElementById("ubongo-karta").style.display = "none";
+    document.getElementById("tickettoride-karta").style.display = "none";
+    document.getElementById("divu-sveta-karta").style.display = "none";
+    document.getElementById("jizdenky-prosim-karta").style.display = "none";
+    document.getElementById("duch-karta").style.display = "none";
+    
+    document.getElementById("zaplaceno").innerText = "Děkujeme za platbu, nachytal jste se podvodnému eshopu. Děkujeme za vaše peníze!";
+    await new Promise(resolve => setTimeout(resolve, 5000));
+     document.getElementById("zaplaceno").innerText = ""
 }
