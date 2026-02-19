@@ -18,6 +18,24 @@
     display: none;
 }
 
+#activitypocet,
+#dostihyasazkypocet,
+#scrabblepocet,
+#monopolypocet,
+#dixitpocet,
+#carcassonnepocet,
+#bangpocet,
+#krycijmenapocet,
+#karakpocet,
+#vybusnekockypocet,
+#ubongopocet,
+#tickettoridepocet,
+#divusvetapocet,
+#jizdenkyprosimpocet,
+#duchpocet {
+    background-color: rgba(0, 0, 0, 0);
+}
+
 .schovanykosik {
     display: none;
 }
@@ -25,6 +43,7 @@
 #zaplatit {
     /* hello */
 }
-.odskok{
-    margin-bottom:60px;
+
+.odskok {
+    margin-bottom: 60px;
 }

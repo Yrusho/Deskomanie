@@ -112,7 +112,6 @@ function duch() {
 function activitykosik() {
     document.getElementById("activity-karta").style.display = "none";
     document.getElementById("activityobchod").style.display = "";
-    pocet = 0
 }
 
 function dostihyasazkykosik() {
@@ -227,3 +226,242 @@ function kosik() {
 
 //count + -
 
+let pocetactivity = 1
+function activityplus(){
+    pocetactivity++
+    document.getElementById("activitypocet").innerText = pocetactivity
+}
+function activityminus(){
+    if(pocetactivity == 1){
+    document.getElementById("activity-karta").style.display = "none";
+    document.getElementById("activityobchod").style.display = "";
+    }
+    else{
+        pocetactivity--
+        document.getElementById("activitypocet").innerText = pocetactivity
+    }
+}
+
+let pocetdostihy = 1
+function dostihyasazkyplus(){
+    pocetdostihy++
+    document.getElementById("dostihyasazkypocet").innerText = pocetdostihy
+}
+function dostihyasazkyminus(){
+    if(pocetdostihy == 1){
+    document.getElementById("dostihyasazky-karta").style.display = "none";
+    document.getElementById("dostihyasazkyobchod").style.display = "";
+    }
+    else{
+        pocetdostihy--
+        document.getElementById("dostihyasazkypocet").innerText = pocetdostihy
+    }
+}
+
+let pocetscrabble = 1
+function scrabbleplus(){
+    pocetscrabble++
+    document.getElementById("scrabblepocet").innerText = pocetscrabble
+}
+function scrabbleminus(){
+    if(pocetscrabble == 1){
+    document.getElementById("scrabble-karta").style.display = "none";
+    document.getElementById("scrabbleobchod").style.display = "";
+    }
+    else{
+        pocetscrabble--
+        document.getElementById("scrabblepocet").innerText = pocetscrabble
+    }
+}
+
+let pocetmonopoly = 1
+function monopolyplus(){
+    pocetmonopoly++
+    document.getElementById("monopolypocet").innerText = pocetmonopoly
+}
+function monopolyminus(){
+    if(pocetmonopoly == 1){
+    document.getElementById("monopoly-karta").style.display = "none";
+    document.getElementById("monopolyobchod").style.display = "";
+    }
+    else{
+        pocetmonopoly--
+        document.getElementById("monopolypocet").innerText = pocetmonopoly
+    }
+}
+
+let pocetdixit = 1
+function dixitplus(){
+    pocetdixit++
+    document.getElementById("dixitpocet").innerText = pocetdixit
+}
+function dixitminus(){
+    if(pocetdixit == 1){
+    document.getElementById("dixit-karta").style.display = "none";
+    document.getElementById("dixitobchod").style.display = "";
+    }
+    else{
+        pocetdixit--
+        document.getElementById("dixitpocet").innerText = pocetdixit
+    }
+}
+
+let pocetcarcassonne = 1
+function carcassonneplus(){
+    pocetcarcassonne++
+    document.getElementById("carcassonnepocet").innerText = pocetcarcassonne
+}
+function carcassonneminus(){
+    if(pocetcarcassonne == 1){
+    document.getElementById("carcassonne-karta").style.display = "none";
+    document.getElementById("carcassonneobchod").style.display = "";
+    }
+    else{
+        pocetcarcassonne--
+        document.getElementById("carcassonnepocet").innerText = pocetcarcassonne
+    }
+}
+
+let pocetbang = 1
+function bangplus(){
+    pocetbang++
+    document.getElementById("bangpocet").innerText = pocetbang
+}
+function bangminus(){
+    if(pocetbang == 1){
+    document.getElementById("bang-karta").style.display = "none";
+    document.getElementById("bangobchod").style.display = "";
+    }
+    else{
+        pocetbang--
+        document.getElementById("bangpocet").innerText = pocetbang
+    }
+}
+
+let pocetkryci = 1
+function krycijmenaplus(){
+    pocetkryci++
+    document.getElementById("krycijmenapocet").innerText = pocetkryci
+}
+function krycijmenaminus(){
+    if(pocetkryci == 1){
+    document.getElementById("krycijmena-karta").style.display = "none";
+    document.getElementById("krycijmenaobchod").style.display = "";
+    }
+    else{
+        pocetkryci--
+        document.getElementById("krycijmenapocet").innerText = pocetkryci
+    }
+}
+
+let pocetkarak = 1
+function karakplus(){
+    pocetkarak++
+    document.getElementById("karakpocet").innerText = pocetkarak
+}
+function karakminus(){
+    if(pocetkarak == 1){
+    document.getElementById("kkarak-karta").style.display = "none";
+    document.getElementById("karakobchod").style.display = "";
+    }
+    else{
+        pocetkarak--
+        document.getElementById("karakpocet").innerText = pocetkarak
+    }
+}
+
+let pocetvybusnekocky = 1
+function vybusnekockyplus(){
+    pocetvybusnekocky++
+    document.getElementById("vybusnekockypocet").innerText = pocetvybusnekocky
+}
+function vybusnekockyminus(){
+    if(pocetvybusnekocky == 1){
+    document.getElementById("vybusnekocky-karta").style.display = "none";
+    document.getElementById("vybusnekockyobchod").style.display = "";
+    }
+    else{
+        pocetvybusnekocky--
+        document.getElementById("vybusnekockypocet").innerText = pocetvybusnekocky
+    }
+}
+
+let pocetubongo = 1
+function ubongoplus(){
+    pocetubongo++
+    document.getElementById("ubongopocet").innerText = pocetubongo
+}
+function ubongominus(){
+    if(pocetubongo == 1){
+    document.getElementById("ubongo-karta").style.display = "none";
+    document.getElementById("ubongoobchod").style.display = "";
+    }
+    else{
+        pocetubongo--
+        document.getElementById("ubongopocet").innerText = pocetubongo
+    }
+}
+
+let pocettickettoride = 1
+function tickettorideplus(){
+    pocettickettoride++
+    document.getElementById("tickettoridepocet").innerText = pocettickettoride
+}
+function tickettorideminus(){
+    if(pocettickettoride == 1){
+    document.getElementById("tickettoride-karta").style.display = "none";
+    document.getElementById("tickettorideobchod").style.display = "";
+    }
+    else{
+        pocettickettoride--
+        document.getElementById("tickettoridepocet").innerText = pocettickettoride
+    }
+}
+
+let pocetdivusveta = 1
+function sedmdivusvetaplus(){
+    pocetdivusveta++
+    document.getElementById("divusvetapocet").innerText = pocetdivusveta
+}
+function sedmdivusvetaminus(){
+    if(pocetdivusveta == 1){
+    document.getElementById("divu-sveta-karta").style.display = "none";
+    document.getElementById("sedmdivusvetaobchod").style.display = "";
+    }
+    else{
+        pocetdivusveta--
+        document.getElementById("divusvetapocet").innerText = pocetdivusveta
+    }
+}
+
+let pocetjizdenky = 1
+function jizdenkyprosimplus(){
+    pocetjizdenky++
+    document.getElementById("jizdenkyprosimpocet").innerText = pocetjizdenky
+}
+function jizdenkyprosimminus(){
+    if(pocetjizdenky == 1){
+    document.getElementById("jizdenky-prosim-karta").style.display = "none";
+    document.getElementById("jizdenkyprosimobchod").style.display = "";
+    }
+    else{
+        pocetjizdenky--
+        document.getElementById("jizdenkyprosimpocet").innerText = pocetjizdenky
+    }
+}
+
+let pocetduch = 1
+function duchplus(){
+    pocetduch++
+    document.getElementById("duchpocet").innerText = pocetduch
+}
+function duchminus(){
+    if(pocetduch == 1){
+    document.getElementById("duch-karta").style.display = "none";
+    document.getElementById("duchobchod").style.display = "";
+    }
+    else{
+        pocetduch--
+        document.getElementById("duchpocet").innerText = pocetduch
+    }
+}

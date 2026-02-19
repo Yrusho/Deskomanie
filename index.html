@@ -35,13 +35,13 @@
                     <div id="activity-kos" class="zarovnani-obrazku"><img id="activity-img" class="obrazek"
                             src="img/activity_3.jpg" alt="activity3"></div>
                     <p id="activity-popis" class="popis">Activity je legendární desková hra, která rozproudí každou
-                        oslavu, rodinné setkání i večírek s přáteli. <br><br> 699 Kč</p>
+                        oslavu, rodinné setkání i večírek s přáteli. <br><br> 699 Kč <br><br> počet: <span
+                            id="activitypocet">1</span></p>
                     <div class="gap-only">
-                        <button class="plus">-</button>
+                        <button onclick="activityminus()" class="plus">-</button>
                         <button onclick="activitykosik()" class="odebrat-z-kosiku">Odebrat</button>
-                        <button class="minus">+</button>
+                        <button onclick="activityplus()" class="minus">+</button>
                     </div>
-
                 </div>
             </div>
 
@@ -50,13 +50,13 @@
                     <h3 id="list">Dostihy a sázky</h3>
                     <div class="zarovnani-obrazku"><img id="dostihy-a-sazky-img" class="obrazek"
                             src="img/dostihyasazky.webp" alt="Dostihy a sázky"></div>
-                    <p class="popis">Dostihy a sázky je napínavá desková hra o nákupu koní, sázení a riskování. <br>
-                        <br> 499 Kč</p>
-                    <button class="plus">-</button>
-                    <button onclick="dostihyasazkykosik()" id="dostihy-a-sazky-v-kosiku"
-                        class="odebrat-z-kosiku">Odebrat</button>
+                    <p class="popis">Dostihy a sázky je napínavá desková hra o nákupu koní, sázení a riskování. <br><br>
+                        499 Kč<br><br> počet: <span id="dostihyasazkypocet">1</span></p>
                     <div class="gap-only">
-                        <button class="minus">+</button>
+                        <button onclick="dostihyasazkyminus()" class="plus">-</button>
+                        <button onclick="dostihyasazkykosik()" id="dostihy-a-sazky-v-kosiku"
+                            class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="dostihyasazkyplus()" class="minus">+</button>
                     </div>
                 </div>
             </div>
@@ -67,8 +67,13 @@
                     <div class="zarovnani-obrazku"><img id="scrabble-img" class="obrazek" src="img/scrabble.jpg"
                             alt="Scrabble"></div>
                     <p class="popis">Scrabble je slovní desková hra, kde skládáním písmen získáváte body a vítězství.
-                        <br> <br> 799 Kč</p>
-                    <button onclick="scrabblekosik()" id="scrabble-v-kosiku" class="tlacitko-do-kosiku">Odebrat</button>
+                        <br><br> 799 Kč <br><br> počet: <span id="scrabblepocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="scrabbleminus()" class="plus">-</button>
+                        <button onclick="scrabblekosik()" id="scrabble-v-kosiku"
+                            class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="scrabbleplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -78,8 +83,13 @@
                     <div class="zarovnani-obrazku"><img id="monopoly-img" class="obrazek" src="img/monopoly.jpg"
                             alt="Monopoly"></div>
                     <p class="popis">Monopoly je strategická desková hra o obchodování, nákupu nemovitostí a budování
-                        impéria. <br> <br> 699 Kč</p>
-                    <button onclick="monopolykosik()" id="monopoly-v-kosiku" class="tlacitko-do-kosiku">Odebrat</button>
+                        impéria. <br><br> 699 Kč <br><br> počet: <span id="monopolypocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="monopolyminus()" class="plus">-</button>
+                        <button onclick="monopolykosik()" id="monopoly-v-kosiku"
+                            class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="monopolyplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -88,9 +98,13 @@
                     <h3 id="list">Hra Dixit</h3>
                     <div class="zarovnani-obrazku"><img id="dixit-img" class="obrazek" src="img/dixit-4.jpg"
                             alt="Dixit"></div>
-                    <p class="popis">Dixit je kreativní desková hra plná fantazie, příběhů a hádání ilustrací. <br> <br>
-                        899 Kč</p>
-                    <button onclick="dixitkosik()" id="dixit-v-kosiku" class="tlacitko-do-kosiku">Odebrat</button>
+                    <p class="popis">Dixit je kreativní desková hra plná fantazie, příběhů a hádání ilustrací. <br><br>
+                        899 Kč <br><br> počet: <span id="dixitpocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="dixitminus()" class="plus">-</button>
+                        <button onclick="dixitkosik()" id="dixit-v-kosiku" class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="dixitplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -100,9 +114,13 @@
                     <div class="zarovnani-obrazku"><img id="carcassonne-img" class="obrazek" src="img/Carcassonne.jpg"
                             alt="Carcassonne"></div>
                     <p class="popis">Carcassonne je strategická desková hra o stavění krajiny, měst a získávání bodů.
-                        <br> <br> 799 Kč</p>
-                    <button onclick="carcassonnekosik()" id="carcassonne-v-kosiku"
-                        class="tlacitko-do-kosiku">Odebrat</button>
+                        <br><br> 799 Kč <br><br> počet: <span id="carcassonnepocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="carcassonneminus()" class="plus">-</button>
+                        <button onclick="carcassonnekosik()" id="carcassonne-v-kosiku"
+                            class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="carcassonneplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -111,9 +129,13 @@
                     <h3 id="list">Střílečka Bang!</h3>
                     <div class="zarovnani-obrazku"><img id="bang-img" class="obrazek" src="img/bang.jpg" alt="Bang!">
                     </div>
-                    <p class="popis">BANG! je napínavá karetní hra plná duelů, strategií a rychlého rozhodování. <br>
-                        <br> 399 Kč</p>
-                    <button onclick="bangkosik()" id="bang-v-kosiku" class="tlacitko-do-kosiku">Odebrat</button>
+                    <p class="popis">BANG! je napínavá karetní hra plná duelů, strategií a rychlého rozhodování.
+                        <br><br> 399 Kč <br><br> počet: <span id="bangpocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="bangminus()" class="plus">-</button>
+                        <button onclick="bangkosik()" id="bang-v-kosiku" class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="bangplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -122,10 +144,14 @@
                     <h3 id="list">Krycí jména</h3>
                     <div class="zarovnani-obrazku"><img id="kryci-jmena-img" class="obrazek" src="img/kryci-jmena.jpg"
                             alt="Krycí jména"></div>
-                    <p class="popis">Krycí jména je týmová desková hra o hádání slov a chytrém předávání nápověd. <br>
-                        <br> 699 Kč</p>
-                    <button onclick="krycijmenakosik()" id="kryci-jmena-v-kosiku"
-                        class="tlacitko-do-kosiku">Odebrat</button>
+                    <p class="popis">Krycí jména je týmová desková hra o hádání slov a chytrém předávání nápověd.
+                        <br><br> 699 Kč <br><br> počet: <span id="krycijmenapocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="krycijmenaminus()" class="plus">-</button>
+                        <button onclick="krycijmenakosik()" id="kryci-jmena-v-kosiku"
+                            class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="krycijmenaplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -135,8 +161,12 @@
                     <div class="zarovnani-obrazku"><img id="karak-img" class="obrazek" src="img/karak.webp" alt="Karak">
                     </div>
                     <p class="popis">Karak je dobrodružná desková hra plná průzkumu dungeonů, pastí a soubojů s monstry.
-                        <br> <br> 699 Kč</p>
-                    <button onclick="karakkosik()" id="karak-v-kosiku" class="tlacitko-do-kosiku">Odebrat</button>
+                        <br><br> 699 Kč <br><br> počet: <span id="karakpocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="karakminus()" class="plus">-</button>
+                        <button onclick="karakkosik()" id="karak-v-kosiku" class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="karakplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -146,9 +176,13 @@
                     <div class="zarovnani-obrazku"><img id="vybusna-kotatka-img" class="obrazek"
                             src="img/vybusna-kocka.webp" alt="Výbušná koťátka"></div>
                     <p class="popis">Výbušné kočky je zábavná a rychlá karetní hra plná taktiky, smíchu a nečekaných
-                        explozí. <br> <br> 399 Kč</p>
-                    <button onclick="vybusnekockykosik()" id="vybusna-kotatka-v-kosiku"
-                        class="tlacitko-do-kosiku">Odebrat</button>
+                        explozí. <br><br> 399 Kč <br><br> počet: <span id="vybusnekockypocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="vybusnekockyminus()" class="plus">-</button>
+                        <button onclick="vybusnekockykosik()" id="vybusna-kotatka-v-kosiku"
+                            class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="vybusnekockyplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -158,8 +192,12 @@
                     <div class="zarovnani-obrazku"><img id="ubongo-img" class="obrazek" src="img/ubongo.jpg"
                             alt="Ubongo"></div>
                     <p class="popis">Ubongo je rychlá a logická desková hra, kde hráči skládají tvarované dílky a
-                        sbírají body. <br> <br> 599 Kč</p>
-                    <button onclick="ubongokosik()" id="ubongo-v-kosiku" class="tlacitko-do-kosiku">Odebrat</button>
+                        sbírají body. <br><br> 599 Kč <br><br> počet: <span id="ubongopocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="ubongominus()" class="plus">-</button>
+                        <button onclick="ubongokosik()" id="ubongo-v-kosiku" class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="ubongoplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -169,9 +207,13 @@
                     <div class="zarovnani-obrazku"><img id="ticket-to-ride-img" class="obrazek"
                             src="img/ticket-to-ride.jpg" alt="Ticket to Ride"></div>
                     <p class="popis">Ticket to Ride je strategická desková hra o stavění železničních tras a soutěžení o
-                        body. <br> <br> 999 Kč</p>
-                    <button onclick="tickettoridekosik()" id="ticket-to-ride-v-kosiku"
-                        class="tlacitko-do-kosiku">Odebrat</button>
+                        body. <br><br> 999 Kč <br><br> počet: <span id="tickettoridepocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="tickettorideminus()" class="plus">-</button>
+                        <button onclick="tickettoridekosik()" id="ticket-to-ride-v-kosiku"
+                            class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="tickettorideplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -181,9 +223,13 @@
                     <div class="zarovnani-obrazku"><img id="7-divu-sveta-img" class="obrazek" src="img/7-divu-sveta.jpg"
                             alt="7 divů světa"></div>
                     <p class="popis">7 divů světa je strategická desková hra, kde budujete civilizaci a soupeříte o moc
-                        a slávu. <br> <br> 899 Kč</p>
-                    <button onclick="sedmdivusvetakosik()" id="7-divu-sveta-v-kosiku"
-                        class="tlacitko-do-kosiku">Odebrat</button>
+                        a slávu. <br><br> 899 Kč <br><br> počet: <span id="divusvetapocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="sedmdivusvetaminus()" class="plus">-</button>
+                        <button onclick="sedmdivusvetakosik()" id="7-divu-sveta-v-kosiku"
+                            class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="sedmdivusvetaplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -193,9 +239,13 @@
                     <div class="zarovnani-obrazku"><img id="jizdenky-prosim-img" class="obrazek"
                             src="img/jizdenky-prosim.jpg" alt="Jízdenky, prosím!"></div>
                     <p class="popis">Tickets, Please! je karetní desková hra plná plánování tras, sbírání jízdenek a
-                        taktiky. <br> <br> 499 Kč</p>
-                    <button onclick="jizdenkyprosimkosik()" id="jizdenky-prosim-v-kosiku"
-                        class="tlacitko-do-kosiku">Odebrat</button>
+                        taktiky. <br><br> 499 Kč <br><br> počet: <span id="jizdenkyprosimpocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="jizdenkyprosimminus()" class="plus">-</button>
+                        <button onclick="jizdenkyprosimkosik()" id="jizdenky-prosim-v-kosiku"
+                            class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="jizdenkyprosimplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -205,10 +255,15 @@
                     <div class="zarovnani-obrazku"><img id="duch-img" class="obrazek" src="img/duch.jpg" alt="Duch!">
                     </div>
                     <p class="popis">Duch je napínavá desková hra, kde hráči hledají ducha a odhalují jeho tajemství.
-                        <br> 549 Kč</p>
-                    <button onclick="duchkosik()" id="duch-v-kosiku" class="tlacitko-do-kosiku">Odebrat</button>
+                        <br><br> 549 Kč <br><br> počet: <span id="duchpocet">1</span></p>
+                    <div class="gap-only">
+                        <button onclick="duchminus()" class="plus">-</button>
+                        <button onclick="duchkosik()" id="duch-v-kosiku" class="odebrat-z-kosiku">Odebrat</button>
+                        <button onclick="duchplus()" class="minus">+</button>
+                    </div>
                 </div>
             </div>
+
         </div> <!-- konec divu položky - košík-->
 
         <div class="titul-div odskok"> <!-- tlačítko zaplatit-->
@@ -248,7 +303,8 @@
                         alt="Scrabble">
                 </div>
                 <p class="popis">Scrabble je slovní desková hra, kde skládáním písmen získáváte body a vítězství. <br>
-                    <br> 799 Kč</p>
+                    <br> 799 Kč
+                </p>
                 <button onclick="scrabble()" id="scrabble-kosik" class="tlacitko-do-kosiku">Do košíku</button>
             </div>
 
@@ -276,7 +332,8 @@
                 <div class="zarovnani-obrazku"><img id="carcassonne-img" class="obrazek" src="img/Carcassonne.jpg"
                         alt="Carcassonne"></div>
                 <p class="popis">Carcassonne je strategická desková hra o stavění krajiny, měst a získávání bodů. <br>
-                    <br> 799 Kč</p>
+                    <br> 799 Kč
+                </p>
                 <button onclick="carcassonne()" id="carcassonne-kosik" class="tlacitko-do-kosiku">Do košíku</button>
             </div>
 
@@ -303,7 +360,8 @@
                 <div class="zarovnani-obrazku"><img id="karak-img" class="obrazek" src="img/karak.webp" alt="Karak">
                 </div>
                 <p class="popis">Karak je dobrodružná desková hra plná průzkumu dungeonů, pastí a soubojů s monstry.
-                    <br> <br> 699 Kč</p>
+                    <br> <br> 699 Kč
+                </p>
                 <button onclick="karak()" id="karak-kosik" class="tlacitko-do-kosiku">Do košíku</button>
             </div>
 
@@ -361,7 +419,8 @@
                 <div class="zarovnani-obrazku"><img id="duch-img" class="obrazek" src="img/duch.jpg" alt="Duch!">
                 </div>
                 <p class="popis">Duch je napínavá desková hra, kde hráči hledají ducha a odhalují jeho tajemství. <br>
-                    <br> 549 Kč</p>
+                    <br> 549 Kč
+                </p>
                 <button onclick="duch()" id="duch-kosik" class="tlacitko-do-kosiku">Do košíku</button>
             </div>
 
