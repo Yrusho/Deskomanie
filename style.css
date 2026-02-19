@@ -4,7 +4,7 @@
 }
 
 .titul-stránky {
-    font-size: 130px;
+    font-size: 140px;
     font-family: 'Inter', sans-serif;
     font-weight: 750;
     color: #ffff;
@@ -35,29 +35,31 @@ main {
 }
 
 #hledat {
-    height: 70px;
-    width: 750px;
+    height: 45px;
+    width: 950px;
     background-color: #afffff;
     font-size: 30px;
 
 }
 
 #hledat:hover {
-    transform: scale(1.08)
+    transform: scale(1.08);
+    transition: transform 2s;
 }
 
 #hledat::placeholder {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 #tlacitko-lupa {
     background-color: #afffff;
-    height: 77px;
-    width: 100px;
+    height: 55px;
+    width: 70px;
 }
 
 #tlacitko-lupa:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
+    transition: transform 2s;
 }
 
 .lupa {
@@ -70,7 +72,7 @@ main {
 #error, #zaplaceno {
     color: #ffe0c8;
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
     font-family: 'Inter', sans-serif;
     font-weight: 750;
     text-shadow:
@@ -88,9 +90,9 @@ main {
 }
 
 .kosik {
-    width: 530px;
-    height: 130px;
-    font-size: 70px;
+    width: 330px;
+    height: 80px;   
+    font-size: 45px;
     background-color: #afffff;
     color: #4a9d9c;
     border-radius: 50px;
@@ -101,20 +103,20 @@ main {
 }
 
 .kosik:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     box-shadow:
         0 0 4px #afffff,
         0 0 10px #afffff,
         -9px 13px 18px #FF3D3D,
         9px 13px 18px #FF3D3D,
         -9px 0 28px #ffe0c8;
-    transition: transform 2s, box-shadow 3s;
+    transition: transform 1.5s, box-shadow 2s;
 }
 
 .zaplatit {
-    width: 300px;
-    height: 85px;
-    font-size: 55px;
+    width: 200px;
+    height: 65px;
+    font-size: 35px;
     background-color: #afffff;
     color: #4a9d9c;
     border-radius: 50px;
@@ -125,14 +127,14 @@ main {
 }
 
 .zaplatit:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     box-shadow:
         0 0 4px #afffff,
         0 0 10px #afffff,
         -9px 13px 18px #FF3D3D,
         9px 13px 18px #FF3D3D,
         -9px 0 28px #ffe0c8;
-    transition: transform 2s, box-shadow 3s;
+    transition: transform 1.5s, box-shadow 2s;
 }
 
 
@@ -144,12 +146,12 @@ main {
     padding-top: 50px;
 }
 
-.produkt {
+.produkt, .produkt-v-kosiku{
     background-color: #354656;
     border: 5px solid #4a9d9c;
     border-radius: 10px;
-    width: 410px;
-    height: 635px;
+    width: 220px;
+    height: 500px;
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
@@ -160,10 +162,10 @@ main {
     transition: transform 3s;
 }
 
-.produkt h3 {
+.produkt, .produkt-v-kosiku h3 {
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
-    font-size: 48px;
+    font-size: 20px;
     color: #e0e0e0;
     font-family: 'Inter', sans-serif;
     font-weight: 750;
@@ -179,15 +181,15 @@ main {
 }
 
 .obrazek {
-    width: 250px;
-    height: 250px;
+    width: 170px;
+    height: 170px;
     border: 5px solid black;
     border-radius: 40px;
 }
 
 .popis {
     background-color: rgba(0, 0, 0, 0);
-    font-size: 22px;
+    font-size: 14px;
     color: rgb(255, 255, 255);
     text-align: center;
     padding-right: 15px;
@@ -196,7 +198,7 @@ main {
 }
 
 .tlacitko-do-kosiku {
-    width: 350px;
+    width: 170px;
     height: 35px;
     font-size: 20px;
     background-color: #afffff;
@@ -206,10 +208,10 @@ main {
 }
 
 .podpis {
-    padding-top: 5px;
+    padding-top: 50px;
     color: #ffe0c8;
     text-align: center;
-    font-size: 25px;
+    font-size: 14px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     text-shadow:
@@ -223,29 +225,6 @@ main {
     justify-content: center;
     gap: 40px;
     display: flex;
-}
-
-.produkt-v-kosiku {
-    background-color: #354656;
-    border: 5px solid #4a9d9c;
-    border-radius: 10px;
-    width: 410px;
-    height: 635px;
-    justify-content: center;
-    flex-wrap: wrap;
-    display: flex;
-}
-
-.produkt-v-kosiku h3 {
-    background-color: rgba(0, 0, 0, 0);
-    text-align: center;
-    font-size: 48px;
-    color: #e0e0e0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 750;
-    text-shadow:
-        0 0 4px #FF3D3D,
-        0 0 14px #ffe0c8;
 }
 
 .oddeleni-kosiku {
