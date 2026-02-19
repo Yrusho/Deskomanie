@@ -26,7 +26,12 @@ function kosik() {
 
 
 //funkce na odebrání z obchodu a přídání do košíku
+/* 
 
+     let pocet = document.getElementById("activitycount").innerText
+     pocet++
+     document.getElementById("activitycount").innerText = pocet
+     */
 function activity() {
     document.getElementById("activity-karta").style.display = "block";
     document.getElementById("activityobchod").style.display = "none";
@@ -107,6 +112,7 @@ function duch() {
 function activitykosik() {
     document.getElementById("activity-karta").style.display = "none";
     document.getElementById("activityobchod").style.display = "";
+    pocet = 0
 }
 
 function dostihyasazkykosik() {
@@ -218,3 +224,6 @@ function kosik() {
     await new Promise(resolve => setTimeout(resolve, 5000));
      document.getElementById("zaplaceno").innerText = ""
 }
+
+//count + -
+
